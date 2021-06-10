@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Crocicchi</title>
+	<link rel="stylesheet" href="untitled.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<audio id="myAudio" loop src="edicole.mp3" preload="auto"></audio>
+
+<div onClick="togglePlay()">
+	<div class="container" onclick="myFunction(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+</div>
+
+
+<script>
+	var myAudio = document.getElementById("myAudio");
+	var isPlaying = false;
+
+	function togglePlay() {
+		isPlaying ? myAudio.pause() : myAudio.play();
+	};
+
+	myAudio.onplaying = function() {
+		isPlaying = true;
+	};
+	myAudio.onpause = function() {
+		isPlaying = false;
+	};
+
+	function myFunction(x) {
+	 	x.classList.toggle("change");
+	}
+</script>
+
+	<div class="header">Crocicchi</div>
+
+	<div class="imgg">
+		<img src="edicola01.jpg" class="img01">
+		<img src="edicola02.jpg" class="img02">
+	</div>
+
+	<div class="testi">
+	<div class="colonna" id="cl01">Abstract</div>
+	<div class="abstract">
+		Ho scelto di indagare una tipologia di oggetti: le edicole votive. Il contesto nel quale sono cresciuto mi ha portato a notarle ed osservarle. Ne ho spesso scorto la presenza in campi e cascine del mio territorio, ne ho sentito parlare tramite racconti di anziani appartenenti alla cultura contadina lombarda.
+		Le Edicole votive sono un elemento molto ricorrente nelle citt&agrave;, nelle campagne e nei borghi italiani, tanto da esser considerate patrimonio artistico culturale. Data la fascinazione che questo oggetto ha sempre suscitato in me, mi sono interrogato sul motivo per cui molto spesso sia ignorato (non solo per questioni di credo o culto) e spogliato dei significati passati. Posti sulle strade, in piazze o sopra edifici, camminando non si notano, o non ci si fa caso.
+		Secondo Christian Noreberg-Schulz gli elementi costitutivi di un vero luogo sono: riconoscibilit&agrave;, orientamento e carattere. La riconoscibilit&agrave; sta nel fatto di farsi &quot;amici&quot; di un certo luogo; per l&rsquo;uomo moderno un&rsquo;amicizia con il luogo naturale &egrave; ridotta e perci&ograve; bisogna orientarsi con manufatti che abbia creato lui. &Egrave; fondamentale per l&rsquo;uomo uno spazio dove si possa orientare senza problemi, che sia composto da oggetti concreti con i quali si possa identificare. Il termine Luogo va ad definire una realt&agrave; concreta, qualitativa con determinate caratteristiche non intercambiabili.
+		Attorno al prodotto della cultura materiale &quot;edicola votiva&quot;Si va effettivamente a creare un luogo, ma se resta inosservato scompare. 
+		Sento la necessit&agrave; di mostrare le &quot;edicole votive&quot; perch&eacute; sono oggetti concreti in un luogo che possiamo riconoscere come casa o come luogo familiare. La percezione di esse varia da persona a persona, ma nel momento in cui diventano reticolato del paesaggio che si &egrave; abituati a vedere ogni giorno, esse diventano un simbolo caratterizzante. 
+		Nell&rsquo;orientarsi nello spazio &egrave; fondamentale ritrovare sempre questi oggetti concreti di ogni luogo, a fronte di questa perdita continua che si ripercuote nei paesaggi moderni nelle costruzioni attuali, spazi troppo astratti e limitati ai propri aspetti universali, spazi solo legati ai bisogni funzionali che perdono le caratteristiche specifiche originarie. Ormai questi elementi passano inosservati e diventano invisibili nella frenesia tipica dell&rsquo;uomo contemporaneo che non ha tempo di osservare o fermarsi. 
+		Crocicchi vuole evidenziare questi luoghi perch&eacute; essi caratterizzano i posti dove noi viviamo, portando una presa di coscienza dello spazio, mostrando la sovrapposizione temporale che hanno subito, e di come esse cambino se osservate e curate anche solo per un istante, quel tanto che basta per fare rinfrescare il loro essere oggetti concreti.
+	</div>
+	<div class="colonna" id="cl02">Interviste</div>
+	<div class="interviste">
+		M: lei comunque la utilizza come luogo di ritrovo o l&rsquo;ha utilizzata? Magari tipo con le proprie amiche?
+		<br>
+		L: E certo! lei come ha visto l&igrave;, c&quot;&egrave; un bel gradino, dove di solito si stava sedute e si giocava, &egrave; ovvio. S&igrave;, poi non ti dava l&quot;importanza, magari che poi con l&quot;andare del tempo con il fatto di crescere si d&agrave; ad una edicola votiva. Per&ograve; ecco sotto abbiamo passato la nostra infanzia, certo.
+		<br><br>
+		G: S&igrave;, nel senso che sicuramente l&rsquo;edicole sono una cosa, sono un fenomeno diffusissimo in Italia. Quindi &egrave; una caratteristica comune un po&quot; di tutti i nostri centri storici in Italia, dove vai vai bene, cio&egrave; le trovi le trovi dappertutto. Io Adesso, per esempio, vivo a Bologna qui a Bologna, c&quot;&egrave; un edicola identica a quella che c&quot;&egrave; in via Bramante e c&quot;&egrave; ne anche una uguale a Firenze per dirti, che le edicole accumulano anche tanti tanti posti. E quindi si come un po&quot; dici te vedere delle edicole &egrave; come dire, vedere il campanile in una citt&agrave; &egrave; come dire vedere il Bar della Piazza, cio&egrave; sono sono caratteristiche che rendono poi, familiare uno qualsiasi dei nostri dei nostri Borghi o citt&agrave; 
+		<br><br>
+		M: Prima di prendervi cura di questa edicola, prendevate cura di altre prima?
+		<br>
+		A: No.
+		<br>
+		G: No, &egrave; 50 anni che sono qua ho iniziato allora, te prima di me? 
+		<br>
+		A: No dopo di te, pero prima di questa non lo ho mai fatto ormai sono 40 anni che ne prendiamo cura insieme.
+		<br>
+		A: Prima di noi non c&rsquo;era nessuno che la puliva, solo una signora che che &egrave; morta ormai da vent&rsquo;anni se ne prendeva cura. Alcune delle piante qui sotto sono ancora sue altre sono morte da tempo. Quella l&igrave; davanti, quella verde appesa al muro, quella era sua.
+		<br><br>
+		M: Perch&eacute; lo fa?
+		<br>
+		A: Perch&eacute; bho, no Mi sento&hellip; mi sento di farla.
+		<br>
+		G: Buongiorno
+		<br>
+		A &amp; M: Buongiorno
+		<br>
+		G: Cosa spieghi? la madonnina?
+		<br>
+		A: Si. *riprende il discorso iniziale* Mi sento di farlo, sono devota e questa &egrave; qui davanti mi viene proprio il sentimento di farlo.
+	</div>
+</div>
+
+<div class="img022"><img src="edicola02.jpg"></div>
+
+</body>
+
+</html>
